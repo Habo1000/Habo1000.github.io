@@ -1,12 +1,11 @@
-#root {
-  max-width: 1280px;
+body {
+  width: min(100%, 1280px);
+
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0;
   text-align: center;
 }
-body {
-  box-sizing: border-box;
-}
+
 .separator {
   width: 3rem;
   height: 0.8rem;
@@ -16,15 +15,12 @@ body {
 }
 header {
   /* max-height: 64px; */
-
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
-    padding: 1rem;
 
     .container-content {
       display: flex;
@@ -114,6 +110,9 @@ form {
   align-items: center;
   gap: 1rem;
   width: 30rem;
+  @media (max-width: 767px) {
+    width: 90%;
+  }
   margin: 3rem auto;
   padding: 1rem;
   background-color: #fff;

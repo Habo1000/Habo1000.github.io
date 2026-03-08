@@ -57,7 +57,7 @@ function App() {
     localStorage.setItem("heroes", JSON.stringify(heroes));
   }, [heroes]);
   return (
-    <div>
+    <>
       <Header
         heroesNumber={heroes.length}
         sumLevelHeroes={heroes.reduce((sum, hero) => sum + hero.level, 0)}
@@ -77,7 +77,7 @@ function App() {
       <AddHeroForm onAdd={handleAddHero} />
 
       <Footer />
-    </div>
+    </>
   );
 }
 

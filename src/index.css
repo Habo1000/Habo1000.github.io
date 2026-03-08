@@ -5,6 +5,10 @@
   --font-family: "Manrope", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -12,5 +16,4 @@ body {
   color: var(--text-color);
   font-family: var(--font-family);
   font-size: 1.6rem;
-  box-sizing: border-box;
 }
